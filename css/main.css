@@ -1,0 +1,511 @@
+/*Шрифт */
+
+@font-face {
+  font-family: 'MuseoSansCyrl';       /* название одно */ 
+  src: url('../fonts/MuseoSansCyrl 100.otf'); /* разные файлы */ 
+  font-weight: 100;              /* разная плотность */ 
+  font-style: normal; 
+} 
+
+@font-face { 
+  font-family: 'MuseoSansCyrl';       /* название одно */ 
+  src: url('../fonts/MuseoSansCyrl 300.otf'); /* разные файлы */ 
+  font-weight: 300;              /* разная плотность */ 
+  font-style: normal;
+} 
+
+@font-face { 
+  font-family: 'MuseoSansCyrl';       /* название одно */ 
+  src: url('../fonts/MuseoSansCyrl 900.otf'); /* разные файлы */ 
+  font-weight: 900;              /* разная плотность */ 
+  font-style: normal;
+} 
+
+
+/*Default settinges */
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'MuseoSansCyrl', Arial, sans-serif; 
+	overflow-x: hidden;
+}
+
+div,ul,li, p, input, button, form, h1, h2, h3, h4,h5, h6 {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+ul,li {
+	display: block;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+	text-decoration: none !important;
+	outline: none;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.clearfix:after {
+	content:'';
+	display: table;
+	width: 100%;
+}
+
+/*
+
+--------------------------------------
+			Header
+--------------------------------------
+
+*/
+
+header {
+	background: url(../img/main-bg.jpg) no-repeat center top / cover;
+	height: 100vh;
+	width: 100vw;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.container {
+	position: relative;
+	padding: 0 !important;	
+}
+
+.header {
+	position: relative;
+}
+
+.logo {
+	background: url(../img/logo.png) no-repeat;
+	width: 170px;
+	height: 77px;
+}
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	margin-top: 26px;
+	margin-bottom: 22px;
+	z-index: 3;
+	margin-left: 18px;
+}
+
+.menu__item a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	padding: 10px 12px 10px 12px;
+	letter-spacing: 0.1em;
+	border-radius: 3px;
+}
+
+.menu__item a:hover {
+	background: rgba(62,112,139,0.7);
+	color: #fff;
+	transition: all 0.4s ease;
+}
+
+.contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	align-items: center;
+	margin-top: 16px;
+	z-index: 2;
+}
+
+.contacts__call {
+	width: 26px;
+	height: 26px;
+	border: 1px dashed #23aae2;
+	border-radius: 50%;
+	margin-right: 11px;
+	text-align: center;
+	line-height: 26px;
+}
+
+.contacts__phone,
+.contacts__call i {
+	font-size: 16px;
+}
+
+.head-overlay {
+	width: 100%;
+	height: 77px;
+	opacity: 0.25;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 0;
+}
+
+.main-title {
+	display: block;
+	font-weight: 900;
+	letter-spacing: 0.3em;
+	font-size: 90px;
+	text-align: center;
+	padding-top: 210px;
+}
+
+.main-title span {
+	padding-top: 46px;
+	font-size: 51px;
+	letter-spacing: 0.25em;
+}
+
+.arrow {
+	font-size: 20px;	
+	width: 46px;
+	height: 46px;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	margin-top: 176px;
+}
+
+.arrow:hover {
+	cursor: pointer;
+	color: black;
+	background-color: white;
+	border-radius: white;
+	border-color: white;
+	transition: all ease 1s;
+}
+
+/*
+
+--------------------------------------
+			Преимущества
+---------------------------------------
+
+*/
+
+.advantages {
+	padding-bottom: 95px;
+}
+
+.title-h2 {
+	font-size: 42px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+	letter-spacing: 0.05em;
+}
+
+.advantages-list {
+	letter-spacing: 0.1em;
+}
+
+.advantages-title {
+	margin: 89px 0px 70px 0px;
+	letter-spacing: 0.1em;
+}
+
+.advantages-list__item {
+	background: #f4f4f4;
+	-webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	height: 360px;
+}
+
+.advantages-list__image_first {
+	background: url(../img/friend-icon.png) no-repeat center;
+	height: 78px;
+}
+
+.advantages-list__image_second {
+	background: url(../img/authenticity.png) no-repeat center;
+	height: 78px;
+}
+
+.advantages-list__image_third {
+	background: url(../img/competence.png) no-repeat center;
+	height: 78px;
+}
+
+.advantages-list__title {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.advantages-list__title::after {
+	content: '';
+	display: block;
+	text-align: center;
+	height: 1px;
+	width: 37px;
+	background: #000;
+	opacity: 0.25;
+	margin-top: 16px;
+	margin: 16px auto;
+}
+
+.advantages-list__text {
+	font-size: 17px;
+	letter-spacing: 1px;
+	padding: 0px 17px;
+}
+
+.advantages-list__wrap {
+	padding-top: 56px;
+}
+
+
+/*
+
+--------------------------------------
+			Переезд 
+---------------------------------------
+
+*/
+
+.relocate {
+	background: url(../img/sea-bg.jpg) no-repeat center top / cover;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+}
+
+.relocate-title {
+	color: #fff;
+	padding-top: 96px;
+	letter-spacing: 0.1em;
+}
+
+.quote {
+	text-align: center;
+	padding-top: 28px;
+	padding-bottom: 56px;
+	opacity: 0.5;
+}
+
+.quote__text {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 1.6;
+}
+
+.quote__author {
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.question {
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-align: center;
+	position: relative;
+}
+
+.question__arrow {
+	position: absolute;
+	border: 1px dashed #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;	
+	text-align: center;
+	line-height: 30px;
+	left: 365px;
+	top: -15px;
+}
+
+.arrow-up {
+	background: #253847;
+}
+
+.arrow-down {
+	top: 155px;
+	background: #233d53;
+}
+
+.question p {
+	font-size: 19px;
+	border: 1px dashed;
+	padding: 55px 5px 55px 5px;
+}
+
+.question span {
+	font-size: 23px;
+	font-weight: 900;
+}
+
+.answer	{
+	letter-spacing: 0.15em;
+	text-align: center;	
+	padding-top: 51px;
+}
+
+.answer p	{
+	text-transform: uppercase;
+	font-size: 37px;
+	font-weight: 900;
+}
+
+.answer span {
+	font-size: 18px;
+}
+
+.button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 52px;
+	margin-bottom: 50px;	
+	text-align: center;
+	width: 212px;
+	height: 58px;
+	line-height: 48px;
+	font-size: 15px;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.button-learn-more {
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+.button-learn-more:hover {
+	color: #253847;
+	background: #fff;
+	transition: all ease 1s;
+}
+
+/*
+
+--------------------------------------
+			Недвижимость 
+---------------------------------------
+
+*/
+
+.property {
+	background: url(../img/city.png) no-repeat center top / cover;
+	width: 100%;
+	height: 100%;
+}
+
+.property-title {
+	margin-top: 100px;
+	padding-bottom: 154px;
+}
+
+.dream-block {
+	background: #f4f4f4;
+	-webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.12);
+	margin-top: 10px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.dream-block__title {
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: black;
+
+}
+
+.dream-block_upper {
+	padding: 65px 25px 47px 51px;
+	z-index: 10;
+}
+
+.dream-block_lower {
+	padding: 40px 15px;
+}
+
+.block-foto {
+	position: relative;
+	margin-top: -50px;
+}
+
+
+.block-foto__item:nth-child(1) {
+	background: url(../img/semicircle-one.png) no-repeat;
+	width: 130px;
+	height: 130px;
+	position: absolute;	
+	right: -10px;
+}
+
+.block-foto__item:nth-child(2) {
+	background: url(../img/semicircle-two.png) no-repeat;
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	left: 15px;
+}
+
+.block-foto__item:nth-child(3) {
+	background: url(../img/circle.png) no-repeat;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -50px;
+	left: 105px;
+	z-index: 20;
+}
+
+.dream-block_lower:before {
+	content: '';
+	background: url(../img/save-rect.png) no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: -15%;
+	left: 47%;
+}
+
+.button-read-more {
+	color: #23aae2;
+	border: 2px solid #23aae2;
+	border-radius: 4px;
+	margin-bottom: 98px;
+}
+
+.button-read-more:hover {
+	color: #fff;
+	background: #23aae2;
+	transition: all ease 1s;
+}
+
+.reviews-title {
+	margin: 86px 0px 100px 0px;
+}
